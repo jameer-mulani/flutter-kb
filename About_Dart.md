@@ -22,16 +22,27 @@
       return userRepository.getUserById(id).name;
     }
     ```
-- Dart has also lambda expression represented by fat arrow syntax ***=>*** for single statement function which turns to be expression, lambda are the unnamed function with optional parameter list but body assigned to varible
+- If function is single exression statement as a body then consise sytax is used by fat arrow ***=>***
+- ```
+  final pi = 3.14;
+  double doubleThePiWith(int p) => p * pi *2;
+  ```
+- ambda are the unnamed function with optional parameter list but body assigned to varible.
 - Due to support of lambda expression function in the Dart becomes the higher order function, higher order function are those functions in the programming language which can be called like normal function howerver one can pass other function as a paramter to it and can return the function from it.
 -  one liner function lambda syntax is like this ***(<parameters>)=><Expression>***
 -  ```
-   var double(int) => (p)=>p*2;
+    Function foo = (double x)=> x*x;
+   
+     main(){
+       var result = foo(3.14);
+       print(result);
+     }
    ```
 - Multiline lambda syntax is like this ***(<parameters>){ //body   return expression;}***
 - ```
-   var double(int) = (p){
-    println("doubling : $p);
-    return p*2;
-  }
+   Function bar = (dobule x){
+    assert(x is double);
+    double value = x * x;
+    reurn value;
+   };
   ```
