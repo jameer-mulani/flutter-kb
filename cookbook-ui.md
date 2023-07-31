@@ -48,4 +48,14 @@ Ans.
    final height = MediaQuery.of(context).size.height;
    ```
 *****
+## Q. How to know which platform name in flutter?
+1. use ```Platform``` class for this.
+   ```
+   import 'package:flutter/services.dart';
+   bool isAndroid = Platform.isAndroid;
+   bool isIos     = Platform.isIos;
+   bool isMacOs   = Platform.isMacOs;
+   // like this for linux, windows and fuschia.
+   ```
+*****
 ## Q.
