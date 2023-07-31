@@ -19,7 +19,7 @@ body: Container(
 *****
 ## Q. How to lock the screen orientation in flutter?
 Ans.
-1. for locking the orientation one can use the below code:
+1. for locking the orientation one can use the below code inside ```main()```:
    ```
     //Ensuring is must
     WidgetsFlutterBinding.ensureInitialized();
